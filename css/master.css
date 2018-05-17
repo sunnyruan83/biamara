@@ -1,169 +1,70 @@
 html,body {
    height: 100%;
    color: white;
-   font: 20px/2.0 Gotham Light,josefin slab,futura,freightasns pro,helvetica,;
+   font: 20px/2.0 helvetica;
    text-align: center; 
    padding: 20px;
    
 }
+.logo{
+  margin-top: 30px;
+}
+.logo img{
+  max-width: 100%;
+} 
+
+
+.nav{
+   width: 100%;
+}
+ul{
+  width: 80%;
+  margin: 0 auto;
+  padding:0;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding:20px;
+}
+ul li a{
+  color: black;
+  text-decoration: none;
+}
+.toggle{
+  width:100%;
+  padding:10px 20px;
+  text-align: left;
+  box-sizing: border-box;
+  color: black;
+  font-size: 30px;
+  display: none;
+}
+@media(max-width: 600px)
+{
+  .toggle{
+  display: block;
+
+  }
+  
+  ul{
+  width: 100%;
+  display: none;
+  }
+  ul li{
+  display: block;
+  text-align: center;
+  }
+}
+.active{
+  display: block;
+}
 .wrapper {
    background-color: #1f2229;
-   width: 80%;
+   width: 100%;
    margin: 0 auto 0 auto;
    padding: 0px;
-   position: relative;
-   
-}
-
-  .topnav {
-    border-bottom: 1px solid #EAEAEB;
-    text-align: right;
-    height: 5px;
-    line-height: 5px;
   }
-
-.menu{
-  margin: 0 5px 0 0;
-}
-.menu a {
-  clear: center;
-  text-decoration: none;
-  color: gray;
-  margin:0 10px;
-  line-height: 10px;
-}
-  
-label{
-  margin: 0 5px 0 0;
-  font size: 26px;
-  line-height: 20px;
-  display: none;
-  width: 26px;
-  float: right;
-}
-#toggle {
-  display: none;
-}
-
-
-@media only screen and (max-width: 700px) {
-  label {
-    display: block;
-    cursor: pointer;
-  }
-  .menu {
-    text-align: center;
-    width: 100%;
-    display: none;
-  }
-  .menu a{
-    display: block;
-    border-bottom: 1 px solid #EAEAEB
-    margin:  0;
-  }
-  #toggle: checked + .menu{
-    display: block;
-  }
-  .rslides{
-    display: none;
-  }
-
-  }
-
-  .rslides{
-    padding-top: 200px;
-    padding: 20px;
-  }
-
-
-
-
-
-  
-  #about img {
-    
-    width:47.5%;
-    float: left;
-  }
-
-  .content{
-    padding: 10px;
-    width:47.5%;
-    float: right;
-    font-family: gotham light;
-    font-weight: 24px;
-    font-size: 24px;
-    line-height: 26px;
-    text-align: center; 
-  }
-  .read-more{
-    borde: 1px solid #000;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-  .read-more-link, .show-less-link{
-    text-decoration: none;
-    font-weight: bolder;
-    color: green;
-  }
-  
-  h2 {
-  font-family:josefinSlab,futura,freightasns pro;
-  font-size: 30px;
-  padding: 30PX;
-  margin-top: 30px;
-  text-align: center;
-} 
- 
-  h3 {
-  font-family:gotham light,josefinSlab,futura,freightasns pro;
-  font-size: 30px;
-  padding: 50PX;
-  text-align: center;
-}
-.container {
-  
-  margin: 10px auto 0 auto;
-  line-height: 1.65;
-  padding: 10px 10PX;
-}
-.box{
-  flex:1;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  flex-basis: 30%;
-}
-
-
-
- 
-/**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
 
 
 
