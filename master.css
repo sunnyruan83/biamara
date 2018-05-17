@@ -1,0 +1,163 @@
+html,body {
+   height: 100%;
+   color: white;
+   font: 20px/2.0 Gotham Light,josefin slab,futura,freightasns pro,helvetica,;
+   text-align: center; 
+   padding: 20px;
+   
+}
+.wrapper {
+   background-color: #1f2229;
+   width: 80%;
+   margin: 0 auto 0 auto;
+   padding: 0px;
+   position: relative;
+   
+}
+  
+  .topnav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+  }
+
+.menu{
+  margin: 0 30px 0 0;
+}
+.menu a {
+  text-decoration: none;
+  color: gray;
+  margin:0 10px;
+  line-height: 70px;
+}
+  
+label{
+  margin: 0 40px 0 0;
+  font size: 26px;
+  line-height: 70px;
+  display: none;
+}
+#toggle {
+  display: none;
+}
+
+
+   #nav {
+  }
+  width: 95%;
+  float: left;
+  padding: 35px;
+  list-style: none;
+  background-color: white;
+  font-size: 18px;
+}
+
+
+
+   #nav li {
+  float: left;
+  width: 20%;
+ }
+   #nav li a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+   #nav li a : hover {
+  color:  #4f7098;
+  font-weight: bold;
+}
+  #nav li .fa {
+ padding:0.1px;
+}
+ 
+  #about {
+
+  }
+  #about img {
+    
+    width:47.5%;
+    float: left;
+  }
+
+  .content{
+    padding: 10px;
+    width:47.5%;
+    float: right;
+    font-family: gotham light;
+    font-weight: 24px;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center; 
+  }
+  .read-more{
+    borde: 1px solid #000;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .read-more-link, .show-less-link{
+    text-decoration: none;
+    font-weight: bolder;
+    color: green;
+  }
+  
+  h2 {
+  font-family:josefinSlab,futura,freightasns pro;
+  font-size: 30px;
+  padding: 30PX;
+  margin-top: 30px;
+  text-align: center;
+} 
+ 
+  h3 {
+  font-family:gotham light,josefinSlab,futura,freightasns pro;
+  font-size: 30px;
+  padding: 50PX;
+  text-align: center;
+}
+.container {
+  
+  margin: 10px auto 0 auto;
+  line-height: 1.65;
+  padding: 10px 10PX;
+}
+.box{
+  flex:1;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+}
+
+
+
+ 
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
