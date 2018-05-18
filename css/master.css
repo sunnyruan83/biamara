@@ -1,12 +1,29 @@
 html,body {
+  margin: 0;
+   background-color: white;
    height: 100%;
    color: white;
-   font: 20px/2.0 helvetica;
+   font: 18px/2.0 Arial,helvetica,sans-serif;
    text-align: center; 
-   padding: 20px;
+   padding: 10;
    
 }
+h2{
+  font:48px/3.0 arial black,arial,helvetica;
+  text-align: center;
+  
+}
+h3{
+  font:48px/3.0 arial black;
+  
+}
+p{
+  margin:0;
+  padding:1em 0;
+}
+
 .logo{
+  background-color: white;
   margin-top: 30px;
 }
 .logo img{
@@ -15,11 +32,13 @@ html,body {
 
 
 .nav{
+   
    width: 100%;
 }
 ul{
-  width: 80%;
-  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+  margin: 0 ;
   padding:0;
 }
 ul li{
@@ -28,12 +47,12 @@ ul li{
   padding:20px;
 }
 ul li a{
-  color: black;
+  color: #4f7098;
   text-decoration: none;
 }
 .toggle{
   width:100%;
-  padding:10px 20px;
+  padding:0 50px;
   text-align: left;
   box-sizing: border-box;
   color: black;
@@ -58,12 +77,23 @@ ul li a{
 .active{
   display: block;
 }
+.wrapper{
+   background-color: #1f2229;
+   width: 80%;
+   margin: 0 auto 0 auto;
+   padding: 20;
+   position: relative;
+}
+.clearfix{
+  overflow: auto;
+  zoom: 1;
+}
+
 .reslides{
   position: relative;
   list-style: none;
   overflow: hidden;
   width: 100%;
-  padding: 0;
   margin: 0;
 }
 .rslides li {
@@ -71,8 +101,7 @@ ul li a{
   position: absolute;
   display: none;
   width:100%;
-  left:0;
-  top:0;
+  
 }
 
 .rslides li:first-child {
@@ -84,10 +113,93 @@ ul li a{
 .rslides img {
   display: block;
   height: auto;
-  float: left;
+  
   width: 100%;
   border: 0;
   }
+ .sidebar{
+  width: 50%;
+  float: left;
+  }
+ .ourstory{
+  width: 45%;
+  float: right;
+  padding: 5px;
+  margin-right: 25px;
+  text-align: justify;
+  }
+  @media(max-width: 800px){
+  .sidebar{
+    width: 50%;
+    min-width: 100%;
+    float:none;
+   }
+  .ourstory{
+    width: 100%;
+    min-width: 100%;
+    min-height: auto;
+    float:none;
+    margin-right:10px;
+    padding-left: 10px;
+    padding: 10px;
+  }
+  .button{
+    background: #333;
+    color:white;
+    text-decoration: none;
+    padding:1em 2em;
+    margin: .5em 0;
+    border:1px solid #666;
+    display: inline-block;
+    justify-content: center;
+  }
+  }
+  .flexbox{
+    display: flex;
+    justify-content:space-between;
+    
+  }
+  .box{
+    padding:10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    width: 30%;
+    }
 
+  
+   
+  @media(max-width: 600px){
+   .flexbox{
+        flex-direction: column-reverse;
+
+    }
+    
+    }
+ /**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
  
 
