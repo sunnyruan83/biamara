@@ -50,6 +50,9 @@ ul li a{
   color: #4f7098;
   text-decoration: none;
 }
+ul li a:hover{
+ color:#1f2229; 
+}
 .toggle{
   width:100%;
   padding:0 50px;
@@ -104,7 +107,7 @@ ul li a{
   
 }
 
-.rslides li:first-child {
+.rslides li first-child {
   position: relative;
   display: block;
   float: left;
@@ -128,6 +131,16 @@ ul li a{
   margin-right: 25px;
   text-align: justify;
   }
+  .button{
+    background: #333;
+    color:white;
+    text-decoration: none;
+    padding:1em 2em;
+    margin: .5em 0;
+    border:1px solid #666;
+    display: inline-block;
+    justify-content: center;
+  }
   @media(max-width: 800px){
   .sidebar{
     width: 50%;
@@ -143,38 +156,142 @@ ul li a{
     padding-left: 10px;
     padding: 10px;
   }
-  .button{
-    background: #333;
-    color:white;
-    text-decoration: none;
-    padding:1em 2em;
-    margin: .5em 0;
-    border:1px solid #666;
-    display: inline-block;
-    justify-content: center;
-  }
+  
   }
   .flexbox{
     display: flex;
     justify-content:space-between;
-    
-  }
+    }
   .box{
     padding:10px;
     box-sizing: border-box;
     margin-bottom: 10px;
     width: 30%;
     }
-
-  
-   
-  @media(max-width: 600px){
+   @media(max-width: 600px){
    .flexbox{
         flex-direction: column-reverse;
+        justify-content: none;
+        width:100%;
+       }
+    }
+    .flex-form{
+      border:20px solid rgba(0,0,0,0.3);
+      border-radius:5px;
+    }
+    #contact{
+      max-width: 1200px;
+      box-sizing: border-box;
+      margin-left:auto;
+      margin-right: auto;
+      padding:1em;
+    }
+  #contact ul{
+    background-color: #1f2229;
+  }
+  #contact ul li{
+    display: block;
+  }
+  .map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
+ @media(min-width: 700px){
+  #contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+ }
+ 
+  .sea {
+  width: 100%;
+  height: 300px;
+  background-color: whitesmoke;
+  background-image: linear-gradient(
+    #1f2229,
+    rgba(255, 255, 255, 0) 80%,
+    rgba(255, 255, 255, 0.5));
+  border-radius: 5px;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.sea .title {
+  color: white;
+  font-size: 24px;
+  font-family: serif;
+  text-align: center;
+  line-height: 250px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.sea .wave {
+  position: absolute;
+  top: -250px;
+  left: -250px;
+  width: 700px;
+  height: 500px;
+  background: #4f7098;
+  border-radius: 43%;
+  filter: opacity(0.4);
+  animation: drift linear infinite;
+  transform-origin: 50% 48%;
+}
+
+.sea .wave:nth-of-type(1) {
+  animation-duration: 5s;
+}
+
+.sea .wave:nth-of-type(2) {
+  animation-duration: 7s;
+}
+
+.sea .wave:nth-of-type(3) {
+  animation-duration: 9s;
+  background-color: #1f2229;
+  filter: opacity(0.1);
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(360deg);
+  }
+}
+.icons{
+  
+  background-color: white;
+  color:#4f7098;
+}
+ .icons a:{
+    color:#4f7098;
+    text-decoration: none;
     }
+    .icons a:hover{
+      color:#1f2229;
+    }
+ 
+  
+
+ 
     
-    }
+    
+  
  /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
