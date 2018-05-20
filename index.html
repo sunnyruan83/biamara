@@ -11,6 +11,7 @@
               <link rel="stylesheet" type="text/css" href="css/master.css">
               <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
               <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+              
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
               <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
               <script src="js/responsiveslides.min.js"></script>
@@ -21,14 +22,14 @@
               <img src="images/logo.jpg" alt="bia mara logo">
       </div>
             <nav>
-                  <div class="toggle">
-                         <i class="fas fa-bars menu" aria-hidden="true"></i>
-                  </div>
+               <div class="toggle">
+                   <i class="fas fa-bars menu" aria-hidden="true"></i>
+               </div>
                   <ul>
                         <li><a href="#home">HOME</a></li>
 		                    <li><a href="#about">ABOUT</a></li>
                         <li><a href="#menu">MENU</a></li>
-		                    <li><a href="#booking">BOOKING</a></li>
+		                    <li><a href="#booking">RESERVATIONS</a></li>
 	                      <li><a href="#contact">CONTACT</a></li>
                   </ul>
             </nav>
@@ -46,75 +47,77 @@
       </ul>
     </div>
 
-   
-        <div id="about" class="cf">
-              <div class="sidebar">
-                        <img src="images/chef.jpg" alt="chef" style="width: 100%">
-              </div>
-              <div class="ourstory">
-                     <h2>OUR STORY</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                      <a href="#about" class="button">Read More</a>
-              </div>
-       </div>
+   <!-- about -->
+    <div id="about" class="cf">
+           <div class="sea">
+             <p class="title"> <h2>our story</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></p>
+             <a href="#about" class="button">Read More</a>
+             <span class="wave"></span>
+             <span class="wave"></span>
+             <span class="wave"></span>
+           </div>
+    </div>
+
+    <!-- menu -->
        <div id="menu" class="cf">
               <h2>MENU</h2>
                  <div class="flexbox">
+
                       <div class="box">
-                            <p>Chef special</p>
+                            <p><i class="far fa-thumbs-up"></i> Chef special</p>
                             <img src="images/box1.jpg" alt="1" style="width: 100%">
+                            <p>CRAB SALAD</p>
+                            <p>with avocado mousse, caper berries & your choice of sourdough €12</p>
+                            <p>THAI FISH CAKE</p>
+                            <p>with a sweet chili dip €12</p>
+                            <p>SEARED SCALLOPS</p>
+                            <p>coconut & chilli pea puree & fried mint €13</p>
                       </div>
                       <div class="box">
-                            <p>Drink</p>
+                            <p><i class="fas fa-glass-martini"></i>  Drink</p>
                             <img src="images/box2.jpg" alt="1" style="width: 100%">
+                            <p>ELDERFLOWER MOJITO</p>
+                            <p>White rum, mint, lime, sugar, elderflower cordial €10,50</p>
+                            <p>TWISTED MARMAID</p>
+                            <p>Blackwater gin, Campari bitters, orange €10,50</p>
+                            <p>ELDERFLOWER SPRITZ</p>
+                            <p>Elderflower cordial, prosecco, elderflower €10,50</p>
                       </div>
                       <div class="box">
-                            <p>Food</p>
+                            <p><i class="fas fa-utensils"></i>  Food</p>
                             <img src="images/box3.jpg" alt="1" style="width: 100%">
+                            <p>BAY 324 MULE</p>
+                            <p>Skyy Vodka, lime juice, Fever-Tree ginger beer €10,50</p>
+                            <p>APEROL CLASSIC</p>
+                            <p>Aperol, soda water, orange zest €10,50</p>
+                            <p>WILD SOUR BULLET</p>
+                            <p>Wild Turkey bourbon, lemon juice, sugar syrup €10,50</p>
                       </div>
                  </div>
          </div>
-         <div id="booking" class="cf">
-
-              <form class="flex-form">
-                    
-                    <label for="name">Name</label>
-                    <input type="bate" name="name">
-                    <label for="phone">Phone</label>
-                    <input type="bate" name="phone">
-                    <label for="date">Date</label>
-                    <input type="bate" name="date">
-                <select name="" id="">
-                    <option value="1">1 Guest</option>
-                    <option value="2">2 Guest</option>
-                    <option value="3">3 Guest</option>
-                    <option value="4">4 Guest</option>
-                    <option value="5">5 Guest</option>
-                    <option value="6">6 Guest</option>
-                    <option value="group">Group</option>
-                </select>
-                <input type="submit" value="booking">
-              </form>
-         </div>
-
-              <div class="contact">
-                    <h3>Booking</h3>
-                    <form>
-                          <p>
-                            <label>Name</label>
-                            <input type="text" name="name">
-                          </p>
-                          <p>
-                            <label>Phone</label>
-                            <input type="text" name="phone">
-                          </p>
-                          
-                          <p>
-                            <label>Date</label>
-                            <input type="text" name="date">
-                          </p>
-                          <p>
-                          <select name="" id="">
+    <!-- reservations -->
+        
+      <h3>Booking</h3>
+      <div id="booking" class="cf"> 
+            <div class="reservations">
+                 <form>
+                  <p>
+                    <i class="far fa-user"></i>
+                    <label>Name</label>
+                    <input type="text" name="name">
+                  </p>
+                  <p>
+                    <i class="fas fa-mobile-alt"></i>
+                    <label>Phone</label>
+                    <input type="text" name="phone">
+                  </p>
+                  <p>
+                    <i class="far fa-calendar-alt"></i>
+                    <label>Date</label>
+                    <input type="text" name="date">
+                  </p>
+                  <p>
+                    <select>
                             <option value="1">1 Guest</option>
                             <option value="2">2 Guest</option>
                             <option value="3">3 Guest</option>
@@ -122,37 +125,40 @@
                             <option value="5">5 Guest</option>
                             <option value="6">6 Guest</option>
                             <option value="group">Group</option>
-                          </select>
-                          </p>
-                          <p>
-                            <button>Booking</button>
-                          </p>
-                    </form>
-              </div>
-         <div id="contact">
-                  
-                   <div class="company-info">
-                   
-                   <ul>
-                      <li>Temple Bar.Dublin</li>
-                      <li>(888)888 888</li>
-                      <li>sunnyruan@gmail.com</li>
-                  </ul>
-                  </div>
+                    </select>
+                  </p>
+                  <p>
+                     <button>Booking</button>
+                  </p>
+                </form>
+           </div>
 
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.878244673766!2d-6.266868684000624!3d53.3454356824804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9cb559ea73%3A0x2600c7a819c83012!2sTemple+Bar%2C+Dublin!5e0!3m2!1sen!2sie!4v1526736258295" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+          <div class="openhours">
+                    <p><i class="far fa-clock"></i> Open Hours</p>
+                    <p>Monday-Thursday:  12:00am-11:am</p>
+                    <p>Friday-Sunday:    12:00am-Midnight</p>
+          </div>
       </div>
-      <div id="footer">
-        <div class="sea">
-             <p class="title">Bia Mara</p>
-             <span class="wave"></span>
-             <span class="wave"></span>
-             <span class="wave"></span>
-        </div>
-        <div id="social" class="icons">
-          
+
+      <!-- contact -->
+        <h2>Contact</h2>
+            <div id="contact">
+                <div class="company-info">
+                   <ul>
+                      <li><i class="fas fa-map-marker"></i> Temple Bar.Dublin</li>
+                      <li><i class="fas fa-phone-volume"></i> (888)888 888</li>
+                      <li><i class="far fa-envelope-open"></i> sunnyruan83@gmail.com</li>
+                  </ul>
+                </div>
+
+                <div class="map">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.878244673766!2d-6.266868684000624!3d53.3454356824804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9cb559ea73%3A0x2600c7a819c83012!2sTemple+Bar%2C+Dublin!5e0!3m2!1sen!2sie!4v1526736258295" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+               </div>
+           </div>
+</div> 
+
+      <!-- footer -->
+        <div class="icons">
             <a href="https://www.facebook.com"><img src="images/facebook.jpg" alt="1"></a>
             <a href="https://www.instagram.com"><img src="images/instagramicon.png" alt="1"></a>
             <a href="https://www.twitter.com"><img src="images/twittericon.png" alt="1"></a>
@@ -161,8 +167,6 @@
             <p>&copy; Lijia Ruan 2018. </p>
             <p> contact information : <a href="mailto:sunnyruan83.gmail.com"> sunnyruan83.gmail.com </a>.</p>
         </div>
-    </div>
-</div>
 
 
   
