@@ -11,7 +11,7 @@ h2{
   padding:10px;
 }
 
- }
+ 
 .logo{
   background-color: white;
   margin-top: 30px;
@@ -31,7 +31,7 @@ ul{
 ul li{
   list-style: none;
   display: inline-block;
-  padding:20px;
+/* padding:20px; */
 }
 ul li a{
   color: #4f7098;
