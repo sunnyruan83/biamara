@@ -83,7 +83,7 @@ ul li a:hover{
    background-color: #1f2229;
    width: 80%;
    margin: 0 auto 0 auto;
-   padding: 20;
+   padding: 0;
    position: relative;
 }
 .clearfix{
@@ -97,12 +97,14 @@ ul li a:hover{
   overflow: hidden;
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 .rslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
   width:100%;
+  
   
 }
 
@@ -115,33 +117,28 @@ ul li a:hover{
 .rslides img {
   display: block;
   height: auto;
-  
   width: 100%;
-  border: 0;
-  }
-  .flexbox{
-    display: -ms-flexbox;
-    -ms-flexbox-wrap:wrap;
-    -ms-flexbox-direction:column;
-   -webkit-flex-flow:row wrap;
-   flex-flow:row wrap;
-   display: -webkit-box;
-   display: flex;
-   }
-  .box{
-    -webkit-box-flex: auto;
-    -ms-flex:auto;
-    width: 400px;
-    padding:20px;
-    font-size: 16px;
-    line-height: 1.0;}
-  
-    .flex-form{
-      border:20px solid rgba(0,0,0,0.3);
-      border-radius:5px;
+ }
+
+.button{
+  font-size: 20px;
+  padding:5px 10px;
+  letter-spacing: 1px;
+  background: #8e8f93;
+  border: none;
+  border-radius: 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+
+}
+#menu{
+   color: white;
+   background: #8e8f93;
     }
 
-   
+  
+
     
      #contact{
       max-width: 1200px;
@@ -176,18 +173,19 @@ ul li a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
+ .reservations{
+  width: 50%;
+  float: left;
+ }
  }
     .sea {
   width: 100%;
   height: 500px;
-  background-color: whitesmoke;
+  background-color:  #1f2229;
   background-image: linear-gradient(
-    #1f2229,
-    rgba(255, 255, 255, 0) 80%,
+     #1f2229,
+    rgba(255, 255, 255, 0) ,
     rgba(255, 255, 255, 0.5));
-  border-radius: 5px;
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
 }
@@ -249,9 +247,13 @@ ul li a:hover{
     .icons a:hover{
       color:#1f2229;
     }
-    
+     @media(max-width: 600px){
+      .icons ul img{
+        width:28px;
+     }
+   }
 
-
+   
   
 
  
