@@ -250,7 +250,9 @@ ul li a:hover{
       color:#1f2229;
     }
      @media(max-width: 600px){
-      
+      .logo{
+        width:150px;
+      }
       h2{
      font: 20px/3.0 Arial Black,sans-serif;
      padding:10px;
