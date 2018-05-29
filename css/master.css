@@ -250,25 +250,20 @@ ul li a:hover{
       color:#1f2229;
     }
      @media(max-width: 600px){
-      .viewmore{
-        display: none;
-      }
+      
       h2{
-     font: 30px/3.0 Arial Black,sans-serif;
+     font: 20px/3.0 Arial Black,sans-serif;
      padding:10px;
      }
      h3{
-     font: 36px/3.0 Arial Black;
+     font: 20px/3.0 Arial Black;
      padding:30px;
      }
     .icons ul img{
         width:28px;
      }
     }
-    body.viewmenu{
-      background: url(../images/menu.jpg);
-    }
-  
+    
 
  
     
